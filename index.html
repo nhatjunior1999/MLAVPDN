@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Quy Trình Nhà Bếp MLVPDN</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Quản Lý Quy Trình Nhà Bếp MLVPDN</h1>
+      <nav>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <!-- Hamburger icon -->
+        <ul id="nav-list">
+          <li><a href="#food-cost">Chi Phí Thực Phẩm</a></li>
+          <li><a href="#temperature-control">Kiểm Soát Nhiệt Độ</a></li>
+          <li><a href="#cleaning">Vệ Sinh Bếp</a></li>
+          <li><a href="#dishes">Bảng Kỹ Thuật Món Ăn</a></li>
+          <li><a href="#inventory">Quản Lý Hàng Tồn Kho</a></li>
+          <li><a href="#vip-amenities">Tiện Nghi Cho Khách VIP</a></li>
+          <li><a href="#personal-hygiene">Vệ Sinh Cá Nhân</a></li>
+          <li><a href="#food-preparation">Chuẩn Bị Thức Ăn</a></li>
+          <li><a href="#hot-holding">Giữ Nóng Thức Ăn</a></li>
+          <li><a href="#cold-holding">Giữ Lạnh Thức Ăn</a></li>
+          <li><a href="#storage">Xử Lý Kho Thực Phẩm</a></li>
+          <li><a href="#cleaning-disinfection">Vệ Sinh và Khử Trùng</a></li>
+          <!-- Thêm hai mục mới -->
+          <li><a href="#equipment-handling">Xử Lý Dụng Cụ Và Thiết Bị</a></li>
+          <li>
+            <a href="#cold-storage">Tủ Lạnh, Tủ Đông Và Máy Làm Mát Sữa</a>
+          </li>
+          <li><a href="#large-equipment-cleaning">Vệ Sinh Thiết Bị Lớn</a></li>
+    <li><a href="#waste-management">Xử Lý Rác</a></li>
+    <li><a href="#pest-control">Kiểm Soát Côn Trùng</a></li>
+    <li><a href="#wash-fruits-vegetables">Rửa Trái Cây Và Rau Củ</a></li>
+    <li><a href="#date-marking">Đánh Dấu Ngày Thực Phẩm</a></li>
+    <li><a href="#hazardous-chemicals">Lưu Trữ Hóa Chất Độc Hại</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="food-cost">
+        <h2>Quản Lý Chi Phí Thực Phẩm</h2>
+        <p>
+          Đảm bảo tiêu chuẩn chi phí cho món ăn và kiểm soát các yếu tố gây dị
+          ứng.
+        </p>
+        <button onclick="toggleDetails('food-cost-details')">
+          Xem chi tiết
+        </button>
+        <div id="food-cost-details" style="display: none">
+          <ul>
+            <li>Kiểm soát chi phí thực phẩm chặt chẽ.</li>
+            <li>
+              Ghi nhận số lượng khách ăn và phần ăn với số lượng nguyên liệu
+              nhất định.
+            </li>
+            <li>
+              Chi phí nguyên liệu và khuyến nghị dinh dưỡng cho trường hợp dị
+              ứng.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Kiểm soát nhiệt độ -->
+      <section id="temperature-control">
+        <h2>Kiểm Soát Nhiệt Độ</h2>
+        <p>
+          Bảo quản thực phẩm ở nhiệt độ thích hợp để tránh sự phát triển của vi
+          khuẩn.
+        </p>
+        <button onclick="toggleDetails('temperature-details')">
+          Xem chi tiết
+        </button>
+        <div id="temperature-details" style="display: none">
+          <ul>
+            <li>Nhiệt độ nguy hiểm là từ 8°C đến 60°C.</li>
+            <li>Thực phẩm đông lạnh: dưới -10°C đến -15°C.</li>
+            <li>Thực phẩm làm lạnh: dưới 10°C.</li>
+            <li>cấp đông nhanh xuống -18°C</li>
+            <li>Kiểm tra nhiệt độ ba lần mỗi ngày.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Vệ sinh bếp -->
+      <section id="cleaning">
+        <h2>Vệ Sinh Bếp</h2>
+        <p>
+          Đảm bảo khu vực bếp gọn gàng và sạch sẽ để tránh ngộ độc thực phẩm.
+        </p>
+        <button onclick="toggleDetails('cleaning-details')">
+          Xem chi tiết
+        </button>
+        <div id="cleaning-details" style="display: none">
+          <ul>
+            <li>thời gian vệ sinh bếp</li>
+            <li>Danh sách công việc vệ sinh hàng ngày.</li>
+            <li>Hướng dẫn vệ sinh thiết bị và dụng cụ.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Bảng kỹ thuật món ăn -->
+      <section id="dishes">
+        <h2>Bảng Kỹ Thuật Món Ăn</h2>
+        <p>
+          Đảm bảo chất lượng và tiêu chuẩn chế biến,cách trình bày và phục vụ
+          món ăn.
+        </p>
+        <button onclick="toggleDetails('dishes-details')">Xem chi tiết</button>
+        <div id="dishes-details" style="display: none">
+          <ul>
+            <li>Phân loại kỹ năng cắt thịt và kỹ thuật nấu ăn.</li>
+            <li>kiểm soát nhiệt độ cần thiết để nấu</li>
+            <li>Kiểm soát chi phí thực phẩm và vệ sinh chế biến.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Quản lý hàng tồn kho -->
+      <section id="inventory">
+        <h2>Quản Lý Hàng Tồn Kho</h2>
+        <p>Theo dõi lượng hàng tồn để dễ quản lý chi phí.</p>
+        <button onclick="toggleDetails('inventory-details')">
+          Xem chi tiết
+        </button>
+        <div id="inventory-details" style="display: none">
+          <ul>
+            <li>Cập nhật phần mềm kiểm kê và kiểm tra hàng tháng.</li>
+            <li>
+              kiểm kê hàng hàng tháng và có sự chứng kiến của nhân viên tài
+              chính
+            </li>
+            <li>Áp dụng nguyên tắc "First In-First Out".</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Tiện nghi cho khách VIP -->
+      <section id="vip-amenities">
+        <h2>Tiện Nghi Cho Khách VIP</h2>
+        <p>Quy trình tạo các tiện nghi tùy chọn cho khách VIP.</p>
+        <button onclick="toggleDetails('vip-amenities-details')">
+          Xem chi tiết
+        </button>
+        <div id="vip-amenities-details" style="display: none">
+          <ul>
+            <li>
+              tiêu chuẩn hóa ưu đãi , trình bày và hình ảnh của các tiện nghi
+              theo phân loại vip của thương hiệu
+            </li>
+            <li>
+              Cung cấp các tùy chọn món mặn, ngon và món đặc trưng của đầu bếp.
+            </li>
+            <li>Thiết lập chế độ luân chuyển tiện nghi hàng tuần.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Vệ sinh cá nhân -->
+      <section id="personal-hygiene">
+        <h2>Vệ Sinh Cá Nhân</h2>
+        <p>Quy định về vệ sinh cá nhân của nhân viên.</p>
+        <button onclick="toggleDetails('hygiene-details')">Xem chi tiết</button>
+        <div id="hygiene-details" style="display: none">
+          <ul>
+            <li>đồng phục sạch sẽ bao gồm cả giày</li>
+            <li>móng tay phải ngắn không sơn và sạch sẽ</li>
+            <li>
+              Nhân viên phải mặc đồng phục sạch sẽ và kiểm soát tóc đúng cách.
+            </li>
+            <li>Không đeo trang sức và rửa tay đúng cách thường xuyên.</li>
+            <li>
+              cấm ăn uống nhai kẹo cao su và hút thuốc lá trong khu vực làm việc
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Chuẩn bị thức ăn -->
+      <section id="food-preparation">
+        <h2>Chuẩn Bị Thức Ăn</h2>
+        <p>
+          Đảm bảo thực phẩm được nấu chín và bảo quản an toàn, tránh tình trạng
+          ngộ độc thực phẩm..
+        </p>
+        <button onclick="toggleDetails('food-preparation-details')">
+          Xem chi tiết
+        </button>
+        <div id="food-preparation-details" style="display: none">
+          <ul>
+            <li>Tất cả thực phẩm phải có nguồn gốc rõ ràng.</li>
+            <li>Vệ sinh dụng cụ và nấu chín thực phẩm đúng cách.</li>
+            <li>
+              thực phẩm cần được nấu chín trước khi phục vụ và phải được giã
+              đông dưới nước lạnh
+            </li>
+            <li>sử dụng gay tay khi ra món ăn tránh lây nhiễm chéo</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Giữ nóng thức ăn -->
+      <section id="hot-holding">
+        <h2>Giữ Nóng Thức Ăn</h2>
+        <p>Đảm bảo thiết bị giữ nóng hoạt động tốt và an toàn.</p>
+        <button onclick="toggleDetails('hot-holding-details')">
+          Xem chi tiết
+        </button>
+        <div id="hot-holding-details" style="display: none">
+          <ul>
+            <li>
+              Thực phẩm cần được làm nóng đến nhiệt độ ≥ 60°C trước khi giữ
+              nóng.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Giữ lạnh thức ăn -->
+      <section id="cold-holding">
+        <h2>Giữ Lạnh Thức Ăn</h2>
+        <p>
+          Đảm bảo thiết bị giữ lạnh hoạt động tốt và bảo quản thực phẩm an toàn.
+        </p>
+        <button onclick="toggleDetails('cold-holding-details')">
+          Xem chi tiết
+        </button>
+        <div id="cold-holding-details" style="display: none">
+          <ul>
+            <li>Nhiệt độ bảo quản rau từ 2-8°C và thịt từ 0-4°C.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Xử lý kho thực phẩm và kho khô -->
+      <section id="storage">
+        <h2>Xử Lý Kho Thực Phẩm Và Kho Khô</h2>
+        <p>Đảm bảo lưu trữ thực phẩm an toàn, gọn gàng.</p>
+        <button onclick="toggleDetails('storage-details')">Xem chi tiết</button>
+        <div id="storage-details" style="display: none">
+          <ul>
+            <li>
+              Thực phẩm được bảo quản cách sàn nhà 15-20 cm và được dán nhãn rõ
+              ràng.
+            </li>
+            <li>
+              Phương pháp FIFO (First In, First Out) phải được áp dụng để quản
+              lý hàng tồn kho.
+            </li>
+            <li>
+              Túi thực phẩm đã mở cần được lưu trữ trong hộp đựng kín và có
+              nhãn, ghi thời hạn sử dụng còn lại là một nửa thời gian từ ngày mở
+              túi.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Vệ sinh và khử trùng -->
+      <section id="cleaning-disinfection">
+        <h2>Vệ Sinh Và Khử Trùng</h2>
+        <p>
+          Sử dụng đúng sản phẩm làm sạch và khử trùng dụng cụ, thiết bị nhà bếp.
+        </p>
+        <button onclick="toggleDetails('cleaning-disinfection-details')">
+          Xem chi tiết
+        </button>
+        <div id="cleaning-disinfection-details" style="display: none">
+          <ul>
+            <li>
+              Thiết lập bồn rửa ba ngăn đúng cách và kiểm soát chất lượng nước
+              rửa.
+            </li>
+            <li>
+              nước rửa phải sạch không dầu mỡ và nhiệt độ nước phải phù hợp
+            </li>
+            <li>
+              bằng nhiệt: Nếu khử trùng bằng nhiệt, đồ dùng cần được ngâm trong
+              nước ở nhiệt độ 171°F (77°C) trong 30 giây.
+            </li>
+            <li>
+              Nếu sử dụng chất khử trùng hóa học, phải pha trộn đúng cách và sử
+              dụng dải kiểm tra nồng độ hóa chất.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <section id="equipment-handling">
+        <h2>Quy Trình Xử Lý Dụng Cụ Và Thiết Bị Nhà Bếp</h2>
+        <p>
+          Đảm bảo khu vực tạp vụ và nhà bếp luôn sạch sẽ, gọn gàng, và sử dụng
+          sản phẩm làm sạch phù hợp.
+        </p>
+        <button onclick="toggleDetails('equipment-handling-details')">
+          Xem chi tiết
+        </button>
+        <div id="equipment-handling-details" style="display: none">
+          <ul>
+            <li>
+              Tất cả thiết bị và dụng cụ nhỏ (bao gồm thớt và dao) được làm sạch
+              và vệ sinh sau mỗi lần sử dụng.
+            </li>
+            <li>
+              Thiết bị và dụng cụ nhỏ được rửa sạch, vệ sinh, và để khô trong
+              không khí.
+            </li>
+            <li>
+              Các bề mặt làm việc và dụng cụ phải luôn sạch sẽ, được khử trùng
+              giữa các lần sử dụng.
+            </li>
+            <li>
+              Nhiệt kế phải được làm sạch và khử trùng sau mỗi lần sử dụng, và
+              phải được hiệu chuẩn thường xuyên.
+            </li>
+            <li>Dụng cụ mở hộp cần phải sạch sẽ.</li>
+            <li>Ngăn kéo và giá đỡ cũng phải sạch sẽ.</li>
+            <li>Dụng cụ sạch cần được xử lý đúng cách để tránh nhiễm bẩn.</li>
+            <li>
+              Liên hệ với tổ tạp vụ để làm sạch thiết bị lớn và không tiến hành
+              sản xuất thực phẩm cho đến khi thiết bị và khu vực làm việc đạt
+              tiêu chuẩn yêu cầu.
+            </li>
+            <li>
+              Tắt và rút phích cắm thiết bị trước khi vệ sinh, đợi thiết bị
+              nguội để tránh tai nạn.
+            </li>
+            <li>
+              Chỉ sử dụng hóa chất đã được phê duyệt và tuân theo các quy trình
+              an toàn khi sử dụng.
+            </li>
+            <li>
+              Sử dụng đồ bảo hộ (găng tay, bảo vệ mắt, tạp dề, v.v.) khi cần
+              thiết trong quá trình vệ sinh.
+            </li>
+            <li>
+              Thiết bị cần được rút phích cắm và tháo gỡ khi không sử dụng.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <section id="cold-storage">
+        <h2>Tủ Lạnh, Tủ Đông Và Máy Làm Mát Sữa</h2>
+        <p>
+          Đảm bảo các thiết bị giữ lạnh lớn và phòng lạnh luôn sạch sẽ, gọn gàng
+          và trong tình trạng tốt để bảo quản thực phẩm.
+        </p>
+        <button onclick="toggleDetails('cold-storage-details')">
+          Xem chi tiết
+        </button>
+        <div id="cold-storage-details" style="display: none">
+          <ul>
+            <li>Nhiệt kế phải luôn hoạt động và chính xác.</li>
+            <li>
+              Nhiệt độ bảo quản thực phẩm phải phù hợp với từng loại thiết bị.
+            </li>
+            <li>
+              Thực phẩm phải được bảo quản cách sàn nhà 6 inch (15 cm) hoặc
+              trong thiết bị làm mát di động.
+            </li>
+            <li>
+              Tất cả thực phẩm phải được đóng gói, dán nhãn và ghi ngày tháng
+              đúng cách, sử dụng phương pháp FIFO (First In, First Out).
+            </li>
+            <li>Giữ cửa tủ lạnh luôn đóng khi không sử dụng.</li>
+            <li>
+              Bảo quản thực phẩm trong tủ lạnh bằng cách bọc kín và sử dụng hộp
+              chứa vệ sinh.
+            </li>
+            <li>
+              Không nên nhét đầy tủ lạnh; cần để không gian để không khí lạnh
+              lưu thông.
+            </li>
+            <li>
+              Phân loại thực phẩm sống và chín riêng biệt để tránh ô nhiễm.
+            </li>
+            <li>
+              Giữ cho thực phẩm đông lạnh được bọc chặt và đậy nắp để tránh bị
+              bỏng lạnh.
+            </li>
+            <li>Không làm đông lạnh lại thực phẩm đã rã đông.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <section id="large-equipment-cleaning">
+        <h2>Quy Trình Vệ Sinh Thiết Bị Lớn</h2>
+        <p>
+          Đảm bảo các thiết bị lớn như máy thái thực phẩm, lò vi sóng, máy hút
+          mùi, và khu vực dỡ hàng luôn sạch sẽ, gọn gàng và sử dụng sản phẩm làm
+          sạch thích hợp.
+        </p>
+        <button onclick="toggleDetails('large-equipment-cleaning-details')">
+          Xem chi tiết
+        </button>
+        <div id="large-equipment-cleaning-details" style="display: none">
+          <ul>
+            <li>
+              <strong>Máy thái thực phẩm:</strong> Tháo rời và vệ sinh trước và
+              sau mỗi lần sử dụng.
+            </li>
+            <li>
+              <strong>Lò vi sóng:</strong> Tắt và ngắt kết nối nguồn điện, vệ
+              sinh kệ kính và bề mặt.
+            </li>
+            <li>
+              <strong>Lò hâm đồ ăn:</strong> Tháo dỡ và rửa bằng tay, khay đựng
+              món ăn có thể rửa bằng máy rửa chén.
+            </li>
+            <li>
+              <strong>Máy hút mùi:</strong> Sử dụng dung dịch nước nóng và chất
+              tẩy rửa để làm sạch bụi bẩn.
+            </li>
+            <li>
+              <strong>Khu vực dỡ hàng và thùng rác:</strong> Phải luôn sạch sẽ
+              và không có mùi hôi.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Ý thứ hai: Quy trình xử lý kho lưu giữ và xử lý rác -->
+      <section id="waste-management">
+        <h2>Quy Trình Xử Lý Kho Lưu Giữ Và Xử Lý Rác</h2>
+        <p>
+          Loại bỏ mọi nguy cơ gây bệnh và mùi hôi khi vật liệu hữu cơ phân hủy.
+          Đảm bảo các thùng chứa rác luôn sạch sẽ.
+        </p>
+        <button onclick="toggleDetails('waste-management-details')">
+          Xem chi tiết
+        </button>
+        <div id="waste-management-details" style="display: none">
+          <ul>
+            <li>
+              <strong>Thùng rác trong bếp:</strong> Phải luôn sạch sẽ và có nắp
+              đậy.
+            </li>
+            <li>
+              <strong>Khu vực dỡ hàng và thùng rác:</strong> Phải luôn sạch sẽ,
+              không có mùi và duy trì vệ sinh thường xuyên.
+            </li>
+            <li>
+              <strong>Xử lý chất thải khô:</strong> Đưa thùng carton rỗng và vật
+              liệu khô ra khỏi bếp.
+            </li>
+            <li>
+              <strong>Xử lý chất thải ướt:</strong> Đưa chất thải ướt vào phòng
+              rác ướt chuyên biệt.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Ý thứ ba: Quy trình kiểm soát côn trùng -->
+      <section id="pest-control">
+        <h2>Quy Trình Kiểm Soát Côn Trùng</h2>
+        <p>
+          Loại bỏ mọi nguy cơ xuất hiện và xâm nhập của côn trùng hoặc sâu bệnh
+          trong khu vực bếp.
+        </p>
+        <button onclick="toggleDetails('pest-control-details')">
+          Xem chi tiết
+        </button>
+        <div id="pest-control-details" style="display: none">
+          <ul>
+            <li>
+              <strong>Cửa ra vào bên ngoài:</strong> Phải có màn chắn và được
+              niêm phong kín.
+            </li>
+            <li>
+              <strong>Kiểm tra dấu hiệu côn trùng:</strong> Đảm bảo không có dấu
+              hiệu xâm nhập của côn trùng hoặc sâu bệnh.
+            </li>
+            <li>
+              <strong>Lịch trình kiểm soát dịch hại:</strong> Được thực hiện bởi
+              chuyên gia kiểm soát côn trùng được cấp phép.
+            </li>
+            <li>
+              <strong>Vệ sinh và bảo quản:</strong> Làm sạch và bảo quản thực
+              phẩm đúng cách để ngăn chặn côn trùng.
+            </li>
+            <li>
+              <strong>Báo cáo và hợp tác:</strong> Báo cáo ngay nếu phát hiện
+              côn trùng.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Ý thứ tư: Quy trình rửa trái cây và rau củ -->
+      <section id="wash-fruits-vegetables">
+        <h2>Quy Trình Rửa Trái Cây Và Rau Củ Quả</h2>
+        <p>
+          Đảm bảo vệ sinh và an toàn thực phẩm, loại bỏ nguy cơ nhiễm côn trùng,
+          sâu bệnh.
+        </p>
+        <button onclick="toggleDetails('wash-fruits-vegetables-details')">
+          Xem chi tiết
+        </button>
+        <div id="wash-fruits-vegetables-details" style="display: none">
+          <ul>
+            <li>
+              <strong>Tuân thủ quy định y tế:</strong> Theo yêu cầu của sở y tế
+              địa phương về an toàn thực phẩm.
+            </li>
+            <li>
+              <strong>Rửa tay đúng cách:</strong> Rửa tay theo quy trình chuẩn
+              trước khi xử lý rau củ.
+            </li>
+            <li>
+              <strong>Vệ sinh dụng cụ:</strong> Rửa và khử trùng tất cả các bề
+              mặt tiếp xúc với thực phẩm.
+            </li>
+            <li>
+              <strong>Sử dụng hóa chất:</strong> Tuân thủ hướng dẫn về việc sử
+              dụng hóa chất rửa.
+            </li>
+            <li>
+              <strong>Rửa trái cây và rau củ:</strong> Rửa kỹ tất cả các loại
+              trái cây và rau củ chưa gọt vỏ.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main>
+      <!-- Ý thứ năm: Quy trình đánh dấu ngày cho thực phẩm ăn liền -->
+      <section id="date-marking">
+        <h2>Quy Trình Đánh Dấu Ngày Cho Thực Phẩm Ăn Liền</h2>
+        <p>Tránh lãng phí thực phẩm và giữ cho nhà bếp gọn gàng, an toàn.</p>
+        <button onclick="toggleDetails('date-marking-details')">
+          Xem chi tiết
+        </button>
+        <div id="date-marking-details" style="display: none">
+          <ul>
+            <li>
+              <strong>Đào tạo nhân viên:</strong> Nhân viên phải được đào tạo về
+              quy trình đánh dấu ngày.
+            </li>
+            <li>
+              <strong>Ghi nhãn thực phẩm:</strong> Ghi rõ tên sản phẩm, ngày sơ
+              chế hoặc mở, và ngày hết hạn.
+            </li>
+            <li>
+              <strong>Làm lạnh và thời hạn sử dụng:</strong> Làm lạnh thực phẩm
+              ở nhiệt độ 5°C hoặc thấp hơn.
+            </li>
+            <li>
+              <strong>Tính thời gian bảo quản:</strong> Thực phẩm phải được sử
+              dụng trong vòng 7 ngày.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <main><!-- Ý thứ sáu: Quy trình lưu trữ và sử dụng hóa chất độc hại -->
+      <section id="hazardous-chemicals">
+        <h2>Quy Trình Lưu Trữ Và Sử Dụng Hóa Chất Độc Hại</h2>
+        <p>Tránh ngộ độc và nhiễm độc từ các sản phẩm hóa chất trong quá trình vận hành nhà bếp.</p>
+        <button onclick="toggleDetails('hazardous-chemicals-details')">Xem chi tiết</button>
+        <div id="hazardous-chemicals-details" style="display: none">
+          <ul>
+            <li><strong>Tuân thủ quy định y tế:</strong> Thực hiện theo các yêu cầu của sở y tế địa phương.</li>
+            <li><strong>Quản lý an toàn hóa chất:</strong> Lưu trữ và sử dụng theo hướng dẫn an toàn.</li>
+            <li><strong>Sử dụng hóa chất:</strong> Chỉ sử dụng dung dịch khử trùng được quy định.</li>
+          </ul>
+        </div>
+      </section>
+
+    <script src="script.js"></script>
+    
+  </body>
+  
+</html>
